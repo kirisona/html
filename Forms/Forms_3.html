@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-US">
+ <head>
+  <title>Forms 3</title>
+ </head>
+ <body>
+  
+  <h2>HTML Forms</h2>
+  
+  <form action="/action_page.php" target="_self" method="post">
+   <fieldset>
+   
+    <legend>Personal information:</legend>
+    First name:<br>
+    <input type="text" name="firstname" value="Karpenko">
+    <br>
+    Last name:<br>
+    <input type="text" name="lastname" value="Petro">
+    <br>
+    Password:<br>
+    <input type="password">
+    <br><br>
+    
+	What languages do you know?<br>
+    <input type="checkbox" name="language" value="english" checked>English
+    <input type="checkbox" name="language" value="spanish">Spanish
+    <input type="checkbox" name="language" value="french">French
+    <input type="checkbox" name="language" value="german">German
+    <br><br>
+    
+	How old are you?<br>
+    <input type="radio" name="age" value="1t20">up to 20
+    <input type="radio" name="age" value="21_40">21 - 40
+    <input type="radio" name="age" value="41_60">41 - 60
+    <input type="radio" name="age" value="gt60">over 60
+    <br><br>
+    
+	What data format is preferred?<br>
+	<select name="format" size=1>
+	 <option selected value="HTML">HTML
+	 <option value="Plain text">Plain text
+	 <option value="PostScript">PostScript
+	 <option value="PDF">PDF
+	</select>
+	<br><br>
+	
+	Why do you prefer this particular data format?<br>
+	<textarea name="format" cols=50 rows=5>
+	</textarea>
+	<br><br>
+	
+	<input type="submit" name="submit_button" value="Ok">
+    <input type="reset" value="Cancel">
+	
+   </fieldset>
+  </form>
+  
+ </body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-US">
+ <head>
+  <title>Passport</title>
+ </head>
+ <body>
+ 
+ <form action="/action_page.php" method="post">
+  <fieldset>
+   <legend>Passport Details</legend>
+     
+	 <fieldset>
+	  <p>Series <input type="text" name="series" maxlength=2 size=2 value="AA">
+	  Number <input type="text" name="number" maxlength=6 size=6 value="111111"></p>
+	  <p>Firstname</p>
+	  <input type="text" name="firstname" value="Petrenko">
+	  <p>Lastname</p>
+ 	  <input type="text" name="lastname" value="Petro">
+	  <p>Patronymic</p>
+  	  <input type="text" name="patronymic" value="Petrovych">
+	  <br>
+	  <p>Gender</p>
+	  
+	  <label for="female">Female</label>
+	  <input type="radio" name="gender" id="female" value="female">
+	  <label for="male">Male</label>
+	  <input type="radio" name="gender" id="male" value="male">
+	  
+	  <p>Date of Birth</p>
+	  <p>dd\mm\yyyy</p>
+	  <select name="day" size=1>
+	   <option value="1">1
+	   <option value="2">2
+	   <option value="3">3
+	  </select>
+	  \
+	  <select name="month" size=1>
+	   <option value="1">1
+	   <option value="2">2
+	   <option value="3">3
+	  </select>
+	  \
+	  <select name="year" size=1>
+	   <option value="1990">1990
+	   <option value="1991">1991
+	   <option value="1992">1992
+	  </select>
+	 </fieldset>
+	 
+	 <br>
+	 
+	 <fieldset>
+	  <h3>Place of Birth</h3>
+	  <p>Country <input type="text" name="country"> Region <input type="text" name="region">
+	  <select name="locality" size=1>
+	   <option value="village">Village
+	   <option value="town">Town
+	   <option value="city">City
+	  </select>
+	  <input type="text" name="locality">
+	  <br><br>
+	  </p>
+	  
+	  <h3>Place of Registration</h3>
+	  <p>Country <input type="text" name="country"> Region <input type="text" name="region">
+	  <select name="locality" size=1>
+	   <option value="village">Village
+	   <option value="town">Town
+	   <option value="city">City
+	  </select>
+	  <input type="text" name="locality">
+	  <br><br>
+	  Street <input type="text" name="street"> Number house/housing <input type="text" name="number">
+	  Apartment <input type="text" name="apartment" maxlength=4 size=4>
+	  </p>
+	 </fieldset>
+	 
+	 <br>
+	 <input type="submit" value="Ok"> <input type="reset" value="Cancel">
+  
+  </fieldset>
+ </form>
+ 
+ </body>
+</html>
