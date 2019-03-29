@@ -1,0 +1,76 @@
+/* common */
+h1,
+h2,
+h3 {
+  font-family: BrandonGrotesque-Medium, serif;
+  color: #007765;
+}
+
+h1,
+h2 {
+  font-size: 75px;
+  font-weight: 400;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 52px;
+}
+
+h4 {
+  font-size: 30px;
+}
+
+h5 {
+  font-size: 35px;
+}
+
+h6 {
+  color: #565656;
+  font-size: 30px;
+  font-family: GothamNarrow-Bold, serif;
+}
+
+h5 strong,
+p strong {
+  font-family: GothamNarrow-Medium, serif;
+}
+
+p {
+  color: #565656;
+  font-family: GothamNarrow-Book, serif;
+  font-size: 24px;
+  letter-spacing: -0.3px;
+  margin-bottom: 1em;
+}
+
+h5 i,
+p i {
+  font-family: GothamNarrow-BookItalic, serif;
+}
+
+.sections {
+  min-height: 400px;
+}
+
+.inner {
+  position: relative;
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.link-out {
+  text-decoration: underline;
+  color: inherit;
+  background: transparent;
+}
+
+.no-margin {
+  margin-bottom: 0 !important;
+}
+
+/* end common */
+
+
+/* put CSS-styles here */

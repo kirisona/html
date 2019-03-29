@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "GothamNarrow-Book";
+    src: url("../fonts/GothamNarrow-Book.woff") format('woff');
+}
+
+@font-face {
+    font-family: "BrandonGrotesque-Medium";
+    src: url("../fonts/BrandonGrotesque-Medium.woff") format('woff');
+}
+
+@font-face {
+    font-family: "GothamNarrow-Medium";
+    src: url("../fonts/GothamNarrow-Medium.woff") format('woff');
+}
+
+@font-face {
+    font-family: "GothamNarrow-Black";
+    src: url("../fonts/GothamNarrow-Black.woff") format('woff');
+}
+
+@font-face {
+    font-family: "GothamNarrow-Bold";
+    src: url("../fonts/GothamNarrow-Bold.woff") format('woff');
+}
+
+@font-face {
+    font-family: "GothamNarrow-BookItalic";
+    src: url("../fonts/GothamNarrow-BookItalic.woff") format('woff');
+}
