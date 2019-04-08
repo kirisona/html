@@ -1,0 +1,111 @@
+<html>
+<head>
+<title>Base JavaScript</title>
+</head>
+<body>
+
+<script type="application/javascript">
+//	console.log('Script 1'); 
+	console.log((5+10)*3, Math.abs(((0.1*0.2)*10 - 0.2)) < 0.001);
+	console.log('String', "Another string", "Sofia\\'s \"table\"", 'This is ' + "a test");
+	console.log([1, 'Array item', 3.14]);
+	
+	var name;
+	let first_name;
+	
+	name = 'Name';
+	first_name = 'First Name';
+	console.log(name, first_name);
+	
+	var pi = 3;
+	var e = 2;
+	
+	var x;
+	x = pi * e;
+	x = x * x - 2 * x;
+	console.log("pi * e = ", x);
+	
+	var a = 10;
+	a -= a + 15;
+	console.log('a = ', a);
+	
+	// Money
+	var amount;
+	var currency;
+	
+	amount = 100;
+	currency = 'UAH';
+	
+	var amount2 = 200;
+	var currency2 = 'USD';
+
+	var totalAmount;
+	var totalCurrency = 'EUR';
+	
+	const EXCHANGE_USD2UAH = 27;
+	const EXCAHNGE_EUR2UAH = 30;
+	const EXCAHNGE_CZK2UAH = 1.18;
+		
+	totalAmount = (amount + amount2 * EXCHANGE_USD2UAH) / EXCAHNGE_EUR2UAH;
+	
+	console.log('Total Amount = ', totalAmount.toFixed(2), totalCurrency);
+	
+	var amount3 = 100;
+	var current3 = 'CZK';
+	
+	totalAmount += (amount3 * EXCAHNGE_CZK2UAH) / EXCAHNGE_EUR2UAH;
+
+	console.log('Total Amount = ', totalAmount.toFixed(2), totalCurrency);
+	
+	var diameter = 10;
+	var square = 3.14 * diameter * diameter / 4;
+	console.log('S = ', square);
+	
+	function Scircle(diameter) {
+		var raduis = diameter / 2;
+		return 3.14 * raduis ** 2;
+	}
+	
+	console.log(Scircle(20));
+	
+	var money = { 
+		amount: 100,
+		currency: 'UAH',
+	};
+	var money2 = {
+		amount: 200,
+		currency: 'USD',
+	};
+	
+	console.log(money.amount, money.currency);
+	console.log('Sofia', 'Kiri');
+	console.log('Sofia' + ' ' + 'Kiri');
+
+	function showMoney(money) {
+		console.log(money.amount + ' ' + money.currency);
+	}
+	showMoney(money);
+	
+	function fff(function_parameter_a) {
+		function_parameter_a = 42;
+		console.log('a = ', function_parameter_a);
+	}	
+	console.log('x = ', x);
+	fff(x);
+	console.log('x = ', x);
+	
+	function sumMoney(money1, money2) {
+	}
+
+</script>
+
+<script type="application/javascript">
+// console.log('Script 2'); 
+</script>
+
+<script type="application/javascript">
+// console.log('Script 3');
+</script>
+
+</body>
+</html>
