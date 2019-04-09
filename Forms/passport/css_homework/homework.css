@@ -1,0 +1,31 @@
+legend {
+	font-family: Courier, MS Courier New, Prestige, Everson Mono;
+	font-style: italic;
+	font-variant: small-caps;
+    font-weight: 900;
+    font-size: xx-large;	
+}
+fieldset fieldset {
+	background-color: #d0d095;
+}
+p {
+	font-family: "Times New Roman", Times, serif;
+	font-size: large;
+}
+label {
+	font-family: "Times New Roman", Times, serif;
+	font-size: large;
+}
+input {
+	font-family: "Times New Roman", Times, serif;
+	font-size: medium;
+	background-color: #e8e8ca;
+}
+select {
+	font-family: "Times New Roman", Times, serif;
+	font-size: large;
+	background-color: #e8e8ca;
+}
+h2 {
+	font-family: Arial, Helvetica, sans-serif;
+}
