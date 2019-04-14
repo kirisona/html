@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>This is a JS example for buttons</title>
+    <script type="text/javascript">
+        function onSumFormSubmit() {
+            var sum = parseInt(document.getElementById('add_x').value) + parseInt(document.getElementById('add_y').value);
+            document.getElementById('sum').value = sum;
+            var color;
+            if (sum > 0) {
+                color = "green";
+            } else {
+                color = "red";
+            }
+            document.getElementById('sum').style = 'border: 2px solid ' + color + ';';
+            return false;
+        }
+        function onMulFormSubmit() {
+            var mul = parseInt(document.getElementById('mul_x').value) * parseInt(document.getElementById('mul_y').value);
+            document.getElementById('mul').value = mul;
+            var color;
+            if (mul > 0) {
+                color = "green";
+            } else {
+                color = "red";
+            }
+            document.getElementById('mul').style = 'border: 2px solid ' + color + ';';
+            return false;
+        }
+        var defaultInputStyle;
+    </script>
+</head>
+<body>
+<form name="sumForm" action="http://example.com/calc" onsubmit="return false;">
+	<h1>Sum Buttons</h1>
+	<dl>
+		<dt>
+			<label for="add_x">X:</label>
+		</dt>
+		<dd>
+			<input type="text" name="add_x" id="add_x" onfocus="defaultInputStyle = this.style; this.style = 'border: 2px dashed blue;';" onblur="this.style = defaultInputStyle;">
+		</dd>
+		<dt>
+			<label for="add_y">Y:</label>
+		</dt>
+		<dd>
+			<input type="text" name="add_y" id="add_y">	
+		</dd>
+		<dt>
+			<label for="sum">X+Y=</label>
+		</dt>
+		<dd>
+            <input type="text" name="sum" id="sum" disabled="disabled"> 
+            <input type="submit" name="calc" value="Calc sum" onclick="onSumFormSubmit();">
+            <input type="submit" name="calc" value="Calc sum" onclick="return onSumFormSubmit();">
+		</dd>
+	</dl>
+
+</form>
+<form name="multiplyForm" action="http://example.com/calc">
+    <h1>Multiply Buttons</h1>
+    <dl>
+        <dt>
+            <label for="mul_x">X:</label>
+        </dt>
+        <dd>
+            <input type="text" name="mul_x" id="mul_x">
+        </dd>
+        <dt>
+            <label for="mul_y">Y:</label>
+        </dt>
+        <dd>
+            <input type="text" name="mul_y" id="mul_y"> 
+        </dd>
+        <dt>
+            <label for="mul">X*Y=</label>
+        </dt>
+        <dd>
+            <input type="text" name="mul" id="mul" disabled="disabled"> 
+            <input type="submit" name="calc" value="Multiply" onclick="onMulFormSubmit();">
+            <input type="submit" name="calc" value="Multiply" onclick="return onMulFormSubmit();">
+        </dd>
+    </dl>
+
+</form>
+</body>
+</html>

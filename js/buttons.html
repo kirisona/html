@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>This is a JS example for buttons</title>
+</head>
+<body>
+<form action="http://example.com/calc" onsubmit="return false;">
+	<h1>Buttons</h1>
+	<dl>
+		<dt>
+			<label for="add_x">X:</label>
+		</dt>
+		<dd>
+			<input type="text" name="add_x" id="add_x">
+		</dd>
+		<dt>
+			<label for="add_y">Y:</label>
+		</dt>
+		<dd>
+			<input type="text" name="add_y" id="add_y">	
+		</dd>
+		<dt>
+			<label for="sum">X+Y=</label>
+		</dt>
+		<dd>
+            <input type="text" name="sum" id="sum" disabled="disabled"> 
+			<input type="submit" name="calc" value="Calc sum" onclick="document.getElementById('sum').value = parseInt(document.getElementById('add_x').value) + parseInt(document.getElementById('add_y').value);">
+		</dd>
+	</dl>
+
+</form>
+</body>
+</html>
